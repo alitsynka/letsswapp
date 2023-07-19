@@ -1,0 +1,403 @@
+@font-face {
+	font-family: 'InterSemiBold';
+	src: url("../../fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url("../../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'InterLight';
+	src: url("../../fonts/Inter-Light.ttf");
+}
+
+.Notify {
+	height: 132px;
+	width: 100%;
+	border-radius: 10px;
+	background: linear-gradient(89.1deg, #E700FF 1.63%, #04FFF0 99.82%);
+	text-align: center;
+	padding: 26px 5px 0 5px;
+}
+
+.Notify > p {
+	font-family: InterSemiBold;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 1);
+}
+
+.Notify > p:nth-child(2) {
+	font-family: InterMedium;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: rgba(0, 0, 0, 1);
+	margin-top: 8px;
+}
+
+button {
+	width: 50px;
+	height: 30px;
+}
+
+.Wrapper {
+	/*min-width: 100%;*/
+	width: 433px;
+	
+}
+
+.Paragraphs {
+	width: 100%;
+	padding-left: 16px;
+	box-sizing: border-box;
+}
+
+.Paragraphs > p {
+	text-align: left;
+	font-family: InterSemiBold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #FFFFFF;
+}
+
+.Paragraphs > p:nth-child(2) {
+	font-family: InterLight;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+	color: #C0C0C0;
+}
+
+.CounterWrapper {
+	height: 73px;
+	min-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(133, 133, 133, 1);
+	padding: 0 16px;
+	margin-top: 20px;
+}
+
+.YouSendBlock > p, .YouGetBlock > p {
+	font-family: Inter;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+	color: #C0C0C0;
+	
+}
+
+.YouSendBlock {
+	width: 50%;
+	position: relative;
+}
+
+.YouSendBlock::after {
+	position: absolute;
+	content: '';
+	bottom: 0px;
+	left: 0px;
+	height: 55px;
+	width: 100%;
+	border-bottom: none;
+	border-right: 1px solid #858585;
+	-webkit-transform: skew(335deg);
+	-moz-transform: skew(335deg);
+	transform: skew(335deg);
+	z-index: -1;
+}
+
+.Value {
+	font-family: InterSemiBold;
+	
+	/*font-size: 28px;*/
+	font-size: calc(16px + 12 * 100vw / 1280);;
+	font-weight: 600;
+	line-height: 34px;
+	text-align: left;
+	color: #FFFFFF;
+	width: 100%;
+	max-width: 172px;
+	overflow: hidden;
+	padding: 0 0;
+}
+
+.FooterCurrency_left, .YouGetBlock_right {
+	font-family: Inter;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align: left;
+	color: #C0C0C0;
+}
+.FooterCurrency_left{
+	display: flex;align-items: center;justify-content: flex-start;
+}
+.FooterCurrency{
+	display: flex;align-items: center;justify-content: flex-end;
+}
+.FooterCurrency_left svg, .FooterCurrency svg{
+	height: 10px;
+	width: 10px;
+	margin-right: 4px;
+}
+
+.YouGetBlock_right {
+	text-align: right;
+}
+
+.RateBlock {
+	padding: 0 16px;
+	box-sizing: border-box;
+	height: 56px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #858585;
+}
+
+.RateBlock > p {
+	font-family: InterSemiBold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #FFFFFF;
+	
+}
+
+.Vector {
+	margin-left: 9.33px;
+}
+
+.Logo {
+	margin-right: 4px;
+}
+.HashIn, .HashOut{
+	overflow: hidden;
+}
+.HashIn > p:first-child, .HashOut > p:first-child{
+	font-family: Inter;
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 12px;
+	color:#C0C0C0;
+	/*color:hotpink;*/
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.DepositAddress, .ExchangeId, .MoreInfo {
+	height: 56px;
+	width: 100%;
+	padding: 0 19px 16px 16px;
+	box-sizing: border-box;
+	/*border:2px solid yellow;*/
+	margin-top: 16px;
+	border-bottom: 1px solid #858585;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.DepositAddress > div > input {
+	max-width: 350px;
+	width: 100%;
+	overflow: hidden;
+	font-family: InterSemiBold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	text-align: left;
+	color: #FFFFFF;
+	padding: 0 0;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.Copy {
+	margin-left: 10px;
+}
+
+.DepositAddress > div > p:first-child {
+	font-family: InterLight;
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 12px;
+	text-align: left;
+	color: #C0C0C0;
+	
+}
+
+.ExchangeId > p:first-child, .MoreInfo > p {
+	font-family: InterLight;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 19px;
+	color: #FFFFFF;
+	color: #C0C0C0;
+}
+
+.ExchangeId > p:nth-child(2), .HashIn > p:nth-child(2), .HashOut > p:nth-child(2) {
+	font-family: InterSemiBold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #FFFFFF;
+	overflow: hidden;
+	/*letter-spacing: 0.8px;*/
+}
+
+.Btns {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 26px 0 34px 0;
+}
+
+.NotifyBtn, .NewExchangeBtn {
+	height: 56px;
+	/*width: 208px;*/
+	width: 100%;
+	border-radius: 16px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: InterBold;
+	margin-right: 10px;
+	font-size: calc(16px + 6 * 100vw / 1280);
+}
+
+.NotifyBtn {
+	width: 100%;
+	height: 56px;
+	position: relative;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	border-radius: 16px;
+	font-size: 20px;
+	background: none;
+	margin-bottom: 33px;
+}
+.NotifyBtn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 16px;
+	border: var(--border-w) solid transparent;
+	background: linear-gradient(89.1deg, #E700FF 1.63%, #04FFF0 99.82%) border-box;
+	-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+	mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: destination-out;
+	mask-composite: exclude;
+}
+
+.NewExchangeBtn {
+	background: linear-gradient(89.1deg, #E700FF 1.63%, #04FFF0 99.82%);
+}
+
+.ConfirmDeposit {
+	width: 100%;
+	height: 52px;
+	border-radius: 10px;
+	background: linear-gradient(89.1deg, #E700FF 1.63%, #04FFF0 99.82%);
+	margin: 16px 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ConfirmDeposit > p {
+	font-family: InterMedium;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: -0.02em;
+	color: rgba(0, 0, 0, 1);
+}
+
+.Lines {
+	max-width: 352px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 14px;
+}
+
+.Line {
+	height: 2px;
+	/*width: 64px;*/
+	width: 100%;
+	border-radius: 2px;
+	/*border: 2px solid red;*/
+	background: rgba(217, 217, 217, 1);
+	/*background: rgba(4, 255, 240, 1);*/
+	border: none;
+	margin: 0px 8px 0px 0px;
+}
+
+@media only screen and (min-width: 1290px) {
+	.Value {
+		font-size: 28px;
+	}
+	.NotifyBtn, .NewExchangeBtn {
+		font-size: 22px;
+	}
+}
+@media only screen and (max-width: 530px) {
+	.ExchangeId > p:nth-child(2), .HashIn > p:nth-child(2), .HashOut > p:nth-child(2) {
+		font-size:14px;
+	}
+	.Wrapper{
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 490px) {
+	.Notify > p {
+		font-size: calc(16px + 4 * 100vw / 1280);
+	}
+	
+	.Notify {
+		height: 110px;
+		padding-top: 18px;
+	}
+	
+	.Notify > p:nth-child(2) {
+		font-size: calc(12px + 4 * 100vw / 1280);
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.Value{
+	
+	}
+	.Notify {
+		height: 100%;
+		max-height: 130px;
+		padding-top: 10px;
+	}
+}

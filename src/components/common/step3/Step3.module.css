@@ -1,0 +1,252 @@
+@font-face {
+	font-family: 'InterSemiBold';
+	src: url("../../fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url("../../fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'InterLight';
+	src: url("../../fonts/Inter-Light.ttf");
+}
+
+.Paragraphs {
+	width: 100%;
+	padding-left: 16px;
+	box-sizing: border-box;
+}
+
+.Paragraphs > p {
+	text-align: left;
+	font-family: InterSemiBold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #FFFFFF;
+}
+
+.Paragraphs > p:nth-child(2) {
+	font-family: InterLight;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+	color: #C0C0C0;
+}
+
+.QrBlock {
+	height: 124px;
+	width: 100%;
+	border-bottom: 1px solid #858585;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*padding: 0 16px 16px 16px;*/
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+.QrBlock > div > div:first-child {
+	display: flex;
+	align-items: center;
+}
+.QrBlock > div > div:first-child svg{
+	height: 24px;
+	width: 24px;
+	margin-right: 4px;
+}
+
+.QrBlock > div > div:first-child > p {
+	color: #FFFFFF;
+	font-family: InterMedium;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align: left;
+}
+
+.QrBlock > div > div:first-child > p > span {
+	font-family: Inter;
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 12px;
+	text-align: left;
+	color: #858585;
+	margin-left: 6px;
+}
+
+.CoinLogo {
+	height: 24px;
+	width: 24px;
+	margin-right: 4px;
+}
+
+.ValueBlock {
+	display: flex;
+	align-items: center;
+}
+
+.ValueBlock > p {
+	font-family: InterSemiBold;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 34px;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.CopyValue {
+	height: 21.6px;
+	width: 18.4px;
+	margin-left: 15.25px;
+}
+
+.QrBlock > div > p {
+	font-family: InterLight;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 16px;
+	text-align: left;
+	color: #858585;
+}
+
+.DepositAddress, .ExchangeId {
+	height: 56px;
+	width: 100%;
+	padding: 0 19px 16px 16px;
+	box-sizing: border-box;
+	/*border:2px solid yellow;*/
+	margin-top: 16px;
+	border-bottom: 1px solid #858585;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.DepositAddress > div {
+	width: 100%;
+}
+
+.DepositAddress > div > input {
+	max-width: 350px;
+	width: 100%;
+	overflow: hidden;
+	font-family: InterSemiBold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	text-align: left;
+	color: #FFFFFF;
+	padding: 0 0;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+
+/*.CanselExchangeBtn {*/
+/*	background-image: url("./bg.svg");*/
+/*	background-size: contain;*/
+/*	background-position: 50%;*/
+/*	background-repeat: no-repeat;*/
+/*	min-height: 56px;*/
+/*	min-width: 100%;*/
+/*	border-radius: 16px;*/
+/*	display: flex;*/
+/*	align-items: center;*/
+/*	justify-content: center;*/
+/*	border: none;*/
+/*	margin: 26px 0 34px 0;*/
+/*	text-align: center;*/
+/*	transition: all ease-in 0.3s;*/
+/*}*/
+
+:root {
+	--border-w: 3px;
+}
+
+.CanselExchangeBtn > p {
+	font-family: InterBold;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0 0;
+}
+
+.CanselExchangeBtn {
+	width: 100%;
+	height: 56px;
+	position: relative;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	margin-top: 26px;
+	border: 0;
+	border-radius: 16px;
+	font-size: 20px;
+	font-family: inherit;
+	color: inherit;
+	background: none;
+	margin-bottom: 33px;
+}
+
+.CanselExchangeBtn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 16px;
+	border: var(--border-w) solid transparent;
+	background: linear-gradient(89.1deg, #E700FF 1.63%, #04FFF0 99.82%) border-box;
+	-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+	mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: destination-out;
+	mask-composite: exclude;
+}
+
+
+.ExchangeId > p:first-child {
+	font-family: InterLight;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 19px;
+	color: #FFFFFF;
+}
+
+.ExchangeId > p:nth-child(2) {
+	font-family: InterSemiBold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #FFFFFF;
+	/*letter-spacing: 0.8px;*/
+}
+
+.Copy {
+	margin-left: 10px;
+}
+
+.DepositAddress > div > p:first-child {
+	font-family: InterLight;
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 12px;
+	text-align: left;
+	color: #C0C0C0;
+	
+}
+@media (max-width: 500px) {
+	.ValueBlock > p {
+		font-size: 24px;
+	}
+}

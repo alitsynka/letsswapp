@@ -1,0 +1,110 @@
+@font-face {
+	font-family: 'Inter';
+	src: url("../fonts/Inter-Regular.ttf");
+}
+
+.Wrapper {
+	height: 80px;
+	width: 100%;
+	background-color: rgba(51, 51, 51, 1);
+	box-sizing: border-box;
+}
+
+.CopyRightContainer {
+	max-width: 1310px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 80px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/*border: 2px dashed mediumpurple;*/
+}
+
+.CopyRightContainer > p {
+	font-family: Inter;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: -0.005em;
+	/*border: 2px dashed skyblue;*/
+	color: #FFFFFF;
+	margin: 0 0;
+}
+
+.Tabs {
+	/*height: 16px;*/
+	width: 381px;
+	/*border: 2px dotted #0AF8F0;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Tabs a {
+	font-family: Inter;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: -0.005em;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1030px) {
+	.Tabs a {
+		/*margin-left: 10px;*/
+		text-align: center;
+	}
+	
+	.CopyRightContainer > p {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.CopyRightContainer {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.CopyRightContainer p {
+		margin: 14px 0 0 0;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.CopyRightContainer {
+		padding: 0 46px 0 46px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.Tabs a {
+		font-size: 12px;
+	}
+	.Tabs{
+		gap:16px;
+		max-width: 336px;
+	}
+	.CopyRightContainer > p {
+		font-size: 10px;
+		line-height: 16px;
+		margin-top: 8px;
+	}
+	.CopyRightContainer{
+		padding: 0 0;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.Tabs{
+		gap: 0;
+		max-width: 90%;
+	}
+}
+
+

@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+body {
+	/*background-color: rgb(17, 38, 70);*/
+	
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Убрать полосу прокрутки у элемента*/
+.element::-webkit-scrollbar {
+	width: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+	width: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar {
+	width: 0;
+}
+button{
+	cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.Wrapper {
+	height: 100%;
+	/*height: 1274px;*/
+	position: relative;
+	z-index: 999;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*align-items: center;*/
+	box-sizing: border-box;
+	/*background-color: rgb(17, 38, 70);*/
+	/*background: url('./components/images/bg1.png') 0 0/cover no-repeat;*/
+	background: url('./components/images/bg2.png') 0 0/cover no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Vector {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	/*padding-left: 300px;*/
+	/*float: right;*/
+	/*margin-left: 300px;*/
+	z-index: -1;
+	opacity: 0.3;
+	/*border: 3px dashed yellow;*/
+	background-image: url('./components/images/Vector.png');
+	background-position: 300px -277px;
+	background-repeat: no-repeat;
+	/*background-size: 1069px 1312px;*/
+	background-size: 100% 1312px;
+	box-sizing: border-box;
 }
+@media only screen and (max-width: 1290px) {
+	.Wrapper{
+		align-items: flex-end;
+	}
+	.Vector {
+		max-width: 1069px;
+		background-position: 85px -277px;
+	}
+}
+@media only screen and (max-width: 730px) {
+	.Vector {
+		max-width: 100%;
+		background-size: 100% 1112px;
+		background-position: 90px -187px;
+	}
+}
+@media only screen and (max-width: 630px) {
+	.Vector {
+		background-size: 100% 1012px;
+		background-position: 90px -137px;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.Vector {
+		height: 100%;
+		background-size: 100% 900px;
+		background-position: 40px -97px;
+	}
+}
+
+
